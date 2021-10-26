@@ -1,0 +1,11 @@
+package src.main.kotlin.modele
+class Users(var username : String,var  password: String,var date: String){
+    fun create_post(content: String){
+        val newPost = Primal_post(this, content,0,0)
+        println(newPost.content)
+    }
+    fun create_post_photo(content: String,pathphoto: String){
+        val newPost = Post_media(this,content,0,0,pathphoto)
+        println(newPost.content)
+    }
+}
